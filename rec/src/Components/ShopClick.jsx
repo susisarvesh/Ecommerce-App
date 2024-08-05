@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShopClick = () => {
   return (
@@ -16,9 +17,9 @@ const ShopClick = () => {
            Where luxury meets versatility. Explore our collection for day to night fashion that speaks sophistication. Start shopping for your new look!
         </p>
         <div className="mt-8 flex space-x-4">
-          <button className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
+          <Link to="/mens" className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
             Shop Men's
-          </button>
+          </Link>
           <button className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
             Shop Women's
           </button>

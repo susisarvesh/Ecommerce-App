@@ -8,6 +8,7 @@ import Upload from './Dynamic/Upload';
 import { CartProvider } from './Components/CartProvider';
 import { Route, Routes } from 'react-router-dom';
 import Cart from './Components/Shop/Cart';
+import FullMens from './Components/Mens/FullMens';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/mens" element={<FullMens/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/upload" element={<Upload />} />
       </Routes>
