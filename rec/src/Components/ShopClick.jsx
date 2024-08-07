@@ -20,9 +20,9 @@ const ShopClick = () => {
           <Link to="/mens" className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
             Shop Men's
           </Link>
-          <button className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
+          <Link to='/womens' className="px-6 py-3 bg-neon-yellow text-white font-semibold rounded-lg hover:bg-neon-yellow-light">
             Shop Women's
-          </button>
+          </Link>
         </div>
       </div>
     </div>
