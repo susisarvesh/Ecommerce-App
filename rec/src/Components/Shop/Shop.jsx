@@ -7,9 +7,13 @@ import General from '../General/General';
 function Shop() {
   const [showMens, setShowMens] = useState(false);
   const [showWomens, setShowWomens] = useState(false);
-
+   const [value,setValue] = useState("")
   const handleMensChange = () => {
     setShowMens(prev => !prev);
+  };
+
+  const handleChange = (e) => {
+    setValue(e.target.value);
   };
 
   const handleWomensChange = () => {
@@ -18,7 +22,8 @@ function Shop() {
 
   return (
     <div>
-      <div className='p-4 bg-slate-50 flex flex-col justify-end'>
+      <div className='p-4 bg-slate-50 flex justify-end items-center'>
+        <div className=' w-full flex flex-col justify-start lg:flex-row justify-evenly items-center'>
         <label htmlFor="mens" className=''>Mens
           <input
             type="checkbox"
@@ -26,6 +31,7 @@ function Shop() {
             name='mens'
             checked={showMens}
             onChange={handleMensChange}
+            className='ml-2'
           />
         </label>
         <label htmlFor="women" className=''>Womens
@@ -34,16 +40,23 @@ function Shop() {
             id="women"
             name='women'
             checked={showWomens}
+             className='ml-2'
+
             onChange={handleWomensChange}
           />
-        </label>
+          </label>
+      <div>
+          <input type="text" placeholder='Search' value={value} className='bg-white p-2 outline-none rounded-lg' onChange={handleChange} />
+          <button className='p-2 bg-indigo-500 text-white '>Search</button>
+         </div>
+        </div>
       </div>
       {!showMens && !showWomens  ? (
-       <General></General>
+       <General search={value}></General>
       ) :
         <>
-         {showMens && <Mens />}
-      {showWomens && <Women />}
+          {showMens && <Mens search={value} />}
+      {showWomens && <Women search={value} />}
         </>
         
         
