@@ -73,5 +73,5 @@ For any questions or feedback, feel free to reach out:
 ---
 
 Thank you for visiting! Happy shopping! 🛍️
-
+**Live Link**: [View Live](https://genizpolc.netlify.app/)
 ---
