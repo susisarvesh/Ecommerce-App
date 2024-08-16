@@ -10,13 +10,13 @@ const Footer = () => {
         </span>
         <ul className="flex flex-wrap items-center justify-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
-            <Link to="/about" className="hover:underline me-4 md:me-6">Shop</Link>
+            <Link to="/shop" className="hover:underline me-4 md:me-6">Shop</Link>
           </li>
           <li>
-            <Link to="/privacy-policy" className="hover:underline me-4 md:me-6">Home</Link>
+            <Link to="/" className="hover:underline me-4 md:me-6">Home</Link>
           </li>
           <li>
-            <Link to="/licensing" className="hover:underline me-4 md:me-6">Cart</Link>
+            <Link to="/cart" className="hover:underline me-4 md:me-6">Cart</Link>
           </li>
         
         </ul>

@@ -100,12 +100,16 @@ function Women({ search }) {
               />
               <div className="flex items-center justify-between">
                 <p className="text-2xl p-2 ">{women.name}</p>
+               <div className='flex justify-between items-center '>
+                 <p className='text-xl text-indigo-500 font-bold mr-2'>${women.price}</p>
                 <ShoppingBag
                   className="cursor-pointer"
                   onClick={() => {
                     addToCart(women);
                   }}
-                />
+                  
+                  />
+                  </div>
               </div>
               <div className="flex justify-end items-end">
                 <p className="text-xl p-2 bg-gray-400 m-1 text-white rounded-md">

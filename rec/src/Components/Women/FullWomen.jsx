@@ -97,7 +97,8 @@ function FullWomen() {
                           <div >
                           <img src={women.img} className='w-[450px] h-[600px] object-cover rounded-lg' alt="" />
                           <div className='flex items-center justify-between'>
-                                  <p className='text-2xl p-2 '>{women.name}</p>
+                        <p className='text-2xl p-2 '>{women.name}</p>
+                        <p>{women.price}</p>
                         <ShoppingBag className='cursor-pointer' onClick={() => { addToCart(women) }}/>
                                   
                               </div>
